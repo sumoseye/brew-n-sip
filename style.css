@@ -1,0 +1,183 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: "Pixelify Sans", serif;
+    overflow: hidden;
+
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+#front{
+    background-image: url('images/frontpage0.png');
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    overflow:hidden;
+    position: relative;
+   
+    
+}
+#start,#journal{
+    position: absolute;
+    
+   
+  
+}
+#start{
+    top: 55%;
+    left:29%;
+}
+#journal{
+    top: 70%;
+    left:35%;
+}
+#journal:hover{
+   scale:1.1;
+}
+#start:hover{
+    scale:1.1;
+ }
+ #bg{
+    background-image: url('images/entrancefr.jpeg');
+    background-position:center;
+    background-size: cover;
+    width: 100%;
+    height:100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    overflow:hidden;
+    position: relative;
+    z-index: 0;
+    
+ }
+ #transparent{
+    position: absolute;
+    background-color: transparent;
+   height:43%;
+   width: 14%;
+   top: 32%;   
+   right: 15%;
+ }
+
+
+ 
+
+ #page{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position:relative;
+   color:white;
+   padding-top:2% ;
+   padding-left:8%;
+   overflow: hidden;
+ }
+ 
+
+
+ #cursor{
+    
+    width:45px;
+    height: 45px;
+    pointer-events: none;
+    position: fixed;
+  background-image:url("images/mittenscursor.png");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+
+ }
+ h1{
+    display:flex;
+    align-items: center;
+    font-size:35px;
+    font-weight: 600;
+ }
+ .page h1 img{
+    width: 60px;
+    margin-right:8px;
+}
+button{
+   display:flex;
+   align-items: center;
+   background:linear-gradient();
+   color:rgb(0, 0, 0);
+   font-size:16px;
+   outline:0;
+   border:0;
+   border-radius:40px;
+   padding:15px 25px;
+   margin:30px 0 20px;
+   cursor: pointer;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: rgb(168, 167, 114);
+    color:#333;
+    padding:20px;
+    margin:20px 0;
+    outline:none;
+    border-radius:5px;
+}
+.inputbox img{
+    width:25px;
+    position: absolute;
+    bottom:15px;
+    right:15px;
+    cursor: pointer;
+
+}
+#bgame{
+    display:flex;
+}
+
+#bgame img{
+    background-image: url('images/game.png');
+    background-position:center;
+    background-size: cover;
+   
+    width: 100%;
+    height:100%;
+    z-index: 0;
+    position: relative;
+   
+    
+}
+#initialposition img{
+    z-index: 99;
+    top: 45%;
+    left: 19%;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+    background-color: rgba(240, 248, 255, 0);
+
+
+}
+
+.place {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: transparent;
+    top:56%;
+    right:15%;
+    z-index: 2;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+ }
