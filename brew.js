@@ -5,5 +5,9 @@ door.addEventListener("click",function(){
 })
 
 gsap.to("#text",{
-    x:
+    y:-100,
+    duration:3,
+    delay:1,
+    ease: "power2.out",
+
 })

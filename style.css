@@ -49,7 +49,7 @@ html,body{
     scale:1.1;
  }
  #bg{
-    background-image: url('images/entrancefr.jpeg');
+    background-image: url('images/entrance0.png');
     background-position:center;
     background-size: cover;
     width: 100%;
@@ -183,11 +183,33 @@ button{
  }
 
 
- #text{
-    width:60%;
-    height:20%;
-    background-color: rgb(155, 114, 61);
+ #text {
     position: absolute;
-    bottom:0%;
-    box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.5);
- }
+    bottom: -16%; 
+    left: 0; 
+    width:100% ;
+    height: 100px;
+    background-color: rgba(197, 151, 53, 0.548); 
+    color: rgb(0, 0, 0);
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+  
+}
+
+
+#text img {
+    width: 245px; 
+    height: auto;
+    margin-right: 10px; 
+   
+}
+p{
+    font-weight: 100;
+    font-size: 40px;
+    
+}
+
+
+ 
