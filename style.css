@@ -9,6 +9,8 @@
 html,body{
     width:100%;
     height: 100%;
+    cursor:url('images/mittens.png'),auto;
+    
 }
 #front{
     background-image: url('images/frontpage0.png');
@@ -82,20 +84,6 @@ html,body{
    padding-left:8%;
    overflow: hidden;
  }
- 
-
-
- #cursor{
-    
-    width:45px;
-    height: 45px;
-    pointer-events: none;
-    position: fixed;
-  background-image:url("images/mittenscursor.png");
-  background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
-
- }
  h1{
     display:flex;
     align-items: center;
@@ -136,7 +124,7 @@ button{
     position: absolute;
     bottom:15px;
     right:15px;
-    cursor: pointer;
+    cursor:url
 
 }
 #bgame{
@@ -147,14 +135,23 @@ button{
     background-image: url('images/game.png');
     background-position:center;
     background-size: cover;
-   
     width: 100%;
     height:100%;
     z-index: 0;
     position: relative;
-   
-    
 }
+.sugar{
+    width: 300px;
+    height:100px;
+    bottom:15%;
+    left:10%;
+    background-color: darkorange;
+    position:absolute;
+    font-size: 50px;
+    font-family: "Pixelify Sans", serif;
+
+}
+
 #initialposition img{
     z-index: 99;
     top: 45%;
@@ -180,4 +177,17 @@ button{
     display: flex; 
     justify-content: center; 
     align-items: center;
+ }
+ .delete-icon{
+    cursor:pointer;
+ }
+
+
+ #text{
+    width:60%;
+    height:20%;
+    background-color: rgb(155, 114, 61);
+    position: absolute;
+    bottom:0%;
+    box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.5);
  }

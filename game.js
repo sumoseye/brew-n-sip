@@ -3,6 +3,7 @@ const bg=document.querySelector("#bgame");
 const cup=document.querySelector(".empty");
 const locs=document.querySelectorAll(".loc");
 
+
 cup.addEventListener("drag",dragging)
 cup.addEventListener("dragstart",dragStart)
 
@@ -52,14 +53,16 @@ function dragDrop(e) {
 
         
         bg.innerHTML = '<img src="images/filling.png" >';
+        cup.src="images/filledcup.png"; 
 
-       
         setTimeout(function () {
             console.log("bg back to normal");
             bg.innerHTML='<img src="images/game.png" >';
-        }, 5000); 
+        }, 3000); 
 
-        cup.innerHTML='<img src="images/filledcup.png" >'
+        
+
+       
     
 }
 function dragEnd(e){

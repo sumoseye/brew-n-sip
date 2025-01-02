@@ -1,5 +1,9 @@
-var next=document.getElementById("transparent");
+var door=document.getElementById("transparent");
 
-next.addEventListener("click",function(){
+door.addEventListener("click",function(){
     window.location.href="game.html"
+})
+
+gsap.to("#text",{
+    x:
 })
